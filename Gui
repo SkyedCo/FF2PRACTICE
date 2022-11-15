@@ -11,10 +11,12 @@ local TextButton = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local TextButton_2 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_5 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
@@ -25,7 +27,7 @@ Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Main.Position = UDim2.new(0.383113146, 0, 0.264197528, 0)
-Main.Size = UDim2.new(0, 406, 0, 168)
+Main.Size = UDim2.new(0, 406, 0, 217)
 Main.Active = true
 Main.Draggable = true
 
@@ -35,15 +37,15 @@ Legit.Name = "Legit"
 Legit.Parent = Main
 Legit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 Legit.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Legit.Position = UDim2.new(0.0369458124, 0, 0.166666672, 0)
-Legit.Size = UDim2.new(0, 377, 0, 132)
+Legit.Position = UDim2.new(0.0369458124, 0, 0.166666761, 0)
+Legit.Size = UDim2.new(0, 377, 0, 173)
 
 TextButton.Parent = Legit
 TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.Position = UDim2.new(0.01591512, 0, 0.0681818202, 0)
+TextButton.Position = UDim2.new(0.0185676813, 0, 0.297731638, 0)
 TextButton.Size = UDim2.new(0, 362, 0, 41)
 TextButton.Font = Enum.Font.JosefinSans
-TextButton.Text = "Mags"
+TextButton.Text = "Mags v2"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 20.000
 
@@ -51,14 +53,25 @@ UICorner_2.Parent = TextButton
 
 TextButton_2.Parent = Legit
 TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.Position = UDim2.new(0.0185676403, 0, 0.439393938, 0)
+TextButton_2.Position = UDim2.new(0.0185676217, 0, 0.0454544947, 0)
 TextButton_2.Size = UDim2.new(0, 362, 0, 41)
 TextButton_2.Font = Enum.Font.JosefinSans
-TextButton_2.Text = "Range v1"
+TextButton_2.Text = "Mags v1"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 20.000
 
 UICorner_3.Parent = TextButton_2
+
+TextButton_3.Parent = Legit
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.Position = UDim2.new(0.0185676813, 0, 0.56940794, 0)
+TextButton_3.Size = UDim2.new(0, 362, 0, 41)
+TextButton_3.Font = Enum.Font.JosefinSans
+TextButton_3.Text = "Mags v2 Transparency"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 20.000
+
+UICorner_4.Parent = TextButton_3
 
 TextLabel.Parent = Main
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -69,7 +82,7 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 16.000
 TextLabel.TextWrapped = true
 
-UICorner_4.Parent = TextLabel
+UICorner_5.Parent = TextLabel
 
 Close.Name = "Close"
 Close.Parent = Main
@@ -84,11 +97,11 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner_5.Parent = Close
+UICorner_6.Parent = Close
 
 -- Scripts:
 
-local function ICUB_fake_script() -- TextButton.LocalScript 
+local function KLBIAB_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local plr = game:GetService("Players").LocalPlayer.Name
@@ -107,8 +120,8 @@ local function ICUB_fake_script() -- TextButton.LocalScript
 		end
 	
 		if toggle == true then
-			left.Size = Vector3.new(20, 20, 20)
-			right.Size = Vector3.new(20, 20, 20)
+			left.Size = Vector3.new(40, 40, 40)
+			right.Size = Vector3.new(40, 40, 40)
 		end
 		if toggle == false then 
 			left.Size = Vector3.new(1.4, 1.65, 1.4)
@@ -116,8 +129,8 @@ local function ICUB_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ICUB_fake_script)()
-local function RAQIYPG_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(KLBIAB_fake_script)()
+local function JWNK_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local plr = game:GetService("Players").LocalPlayer.Name
@@ -147,8 +160,37 @@ local function RAQIYPG_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RAQIYPG_fake_script)()
-local function WDTMF_fake_script() -- Close.LocalScript 
+coroutine.wrap(JWNK_fake_script)()
+local function UBFXZ_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local plr = game:GetService("Players").LocalPlayer.Name
+	local left = game:GetService("Workspace")[plr].CatchLeft
+	local right = game:GetService("Workspace")[plr].CatchRight
+	
+	
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+			
+		end
+	
+		if toggle == true then
+			left.Transparency = Vector3.new(0.7)
+			right.Transparency = Vector3.new(0.7)
+		end
+		if toggle == false then 
+			left.Transparency = Vector3.new(0)
+			right.Transparency = Vector3.new(0)
+		end
+	end)
+end
+coroutine.wrap(UBFXZ_fake_script)()
+local function BHMSSAC_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -158,4 +200,4 @@ local function WDTMF_fake_script() -- Close.LocalScript
 		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
 	end) 
 end
-coroutine.wrap(WDTMF_fake_script)()
+coroutine.wrap(BHMSSAC_fake_script)()
