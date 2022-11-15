@@ -1,4 +1,4 @@
--- Gui to Lua
+-- Gui to Lua   V1 FF2 PRACTICE
 -- Version: 3.2
 
 -- Instances:
@@ -21,7 +21,7 @@ local UICorner_6 = Instance.new("UICorner")
 local Blatant = Instance.new("ScrollingFrame")
 local Button_3 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Legit_3 = Instance.new("TextLabel")
+local Blatant_2 = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
@@ -35,7 +35,7 @@ GuiHOLDER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GuiHOLDER.BackgroundTransparency = 1.000
 GuiHOLDER.Position = UDim2.new(0.367030442, 0, 0.240740746, 0)
 GuiHOLDER.Size = UDim2.new(0, 447, 0, 217)
-GuiHOLDER.Active = true
+GuiHOLDER.Active - true
 GuiHOLDER.Draggable = true
 
 Main.Name = "Main"
@@ -137,21 +137,21 @@ Button_3.TextSize = 14.000
 
 UICorner_7.Parent = Button_3
 
-Legit_3.Name = "Legit"
-Legit_3.Parent = Main
-Legit_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Legit_3.Position = UDim2.new(0.512315273, 0, 0.130854949, 0)
-Legit_3.Size = UDim2.new(0, 192, 0, 34)
-Legit_3.Font = Enum.Font.SourceSans
-Legit_3.Text = "Blatant"
-Legit_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Legit_3.TextSize = 20.000
+Blatant_2.Name = "Blatant"
+Blatant_2.Parent = Main
+Blatant_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Blatant_2.Position = UDim2.new(0.512315273, 0, 0.130854949, 0)
+Blatant_2.Size = UDim2.new(0, 192, 0, 34)
+Blatant_2.Font = Enum.Font.SourceSans
+Blatant_2.Text = "Blatant"
+Blatant_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blatant_2.TextSize = 20.000
 
-UICorner_8.Parent = Legit_3
+UICorner_8.Parent = Blatant_2
 
 -- Scripts:
 
-local function JRDEC_fake_script() -- Close.LocalScript 
+local function AMUS_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -161,8 +161,8 @@ local function JRDEC_fake_script() -- Close.LocalScript
 		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
 	end) 
 end
-coroutine.wrap(JRDEC_fake_script)()
-local function ELOIK_fake_script() -- Button.LocalScript 
+coroutine.wrap(AMUS_fake_script)()
+local function ZZDLVQU_fake_script() -- Button.LocalScript 
 	local script = Instance.new('LocalScript', Button)
 
 	
@@ -198,11 +198,11 @@ local function ELOIK_fake_script() -- Button.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ELOIK_fake_script)()
-local function OBJBI_fake_script() -- Button_2.LocalScript 
+coroutine.wrap(ZZDLVQU_fake_script)()
+local function NTRTB_fake_script() -- Button_2.LocalScript 
 	local script = Instance.new('LocalScript', Button_2)
 
-	
+	local plr = game:GetService("Players").LocalPlayer.Name
 	
 	
 	toggle = false
@@ -236,8 +236,8 @@ local function OBJBI_fake_script() -- Button_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OBJBI_fake_script)()
-local function ZNKR_fake_script() -- Button_3.LocalScript 
+coroutine.wrap(NTRTB_fake_script)()
+local function VTVZP_fake_script() -- Button_3.LocalScript 
 	local script = Instance.new('LocalScript', Button_3)
 
 	toggle = false
@@ -256,12 +256,11 @@ local function ZNKR_fake_script() -- Button_3.LocalScript
 		end
 	
 		if toggle == true then
-			game.Players.LocalPlayer.Humanoid.WalkSpeed = 35
-		end
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35	
 		if toggle == false then 
-			game.Players.LocalPlayer.Humanoid.WalkSpeed = 20
-		end		
-	end)
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+			end
+		end
+		end)
 end
-coroutine.wrap(ZNKR_fake_script)()
-
+coroutine.wrap(VTVZP_fake_script)()
