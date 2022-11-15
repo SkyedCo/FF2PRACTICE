@@ -1,4 +1,4 @@
--- Gui to Lua   V1 FF2 PRACTICE
+-- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
@@ -35,7 +35,7 @@ GuiHOLDER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GuiHOLDER.BackgroundTransparency = 1.000
 GuiHOLDER.Position = UDim2.new(0.367030442, 0, 0.240740746, 0)
 GuiHOLDER.Size = UDim2.new(0, 447, 0, 217)
-GuiHOLDER.Active - true
+GuiHOLDER.Active = true
 GuiHOLDER.Draggable = true
 
 Main.Name = "Main"
@@ -151,7 +151,7 @@ UICorner_8.Parent = Blatant_2
 
 -- Scripts:
 
-local function AMUS_fake_script() -- Close.LocalScript 
+local function CXWR_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -161,10 +161,14 @@ local function AMUS_fake_script() -- Close.LocalScript
 		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
 	end) 
 end
-coroutine.wrap(AMUS_fake_script)()
-local function ZZDLVQU_fake_script() -- Button.LocalScript 
+coroutine.wrap(CXWR_fake_script)()
+local function BCWO_fake_script() -- Button.LocalScript 
 	local script = Instance.new('LocalScript', Button)
 
+	local plr = game:GetService("Players").LocalPlayer.Name
+	local left = game:GetService("Workspace")[plr].CatchLeft
+	local right = game:GetService("Workspace")[plr].CatchRight
+	
 	
 	
 	toggle = false
@@ -176,33 +180,29 @@ local function ZZDLVQU_fake_script() -- Button.LocalScript
 			toggle = true
 		end
 		if toggle == true then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 		if toggle == false then 
 			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	
 		if toggle == true then
-			local plr = game:GetService("Players").LocalPlayer.Name
-			local left = game:GetService("Workspace")[plr].CatchLeft
 			left.Size = Vector3.new(20, 20, 20)
-			local right = game:GetService("Workspace")[plr].CatchRight
 			right.Size = Vector3.new(20, 20, 20)
 		end
 		if toggle == false then 
-			local plr = game:GetService("Players").LocalPlayer.Name
-			local left = game:GetService("Workspace")[plr].CatchLeft
 			left.Size = Vector3.new(1.4, 1.65, 1.4)
-			local right = game:GetService("Workspace")[plr].CatchRight
 			right.Size = Vector3.new(1.4, 1.65, 1.4)
 		end
 	end)
 end
-coroutine.wrap(ZZDLVQU_fake_script)()
-local function NTRTB_fake_script() -- Button_2.LocalScript 
+coroutine.wrap(BCWO_fake_script)()
+local function OVEHE_fake_script() -- Button_2.LocalScript 
 	local script = Instance.new('LocalScript', Button_2)
 
 	local plr = game:GetService("Players").LocalPlayer.Name
+	local leftARM = game:GetService("Workspace")[plr]["Left Arm"]
+	local rightARM = game:GetService("Workspace")[plr]["Right Arm"]
 	
 	
 	toggle = false
@@ -214,30 +214,24 @@ local function NTRTB_fake_script() -- Button_2.LocalScript
 			toggle = true
 		end
 		if toggle == true then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 		if toggle == false then 
 			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	
 		if toggle == true then
-			local leftARM = game:GetService("Workspace")[plr]["Left Arm"]
 			leftARM.Size = Vector3.new(1, 15, 1)
-	
-			local rightARM = game:GetService("Workspace")[plr]["Right Arm"]
 			rightARM.Size = Vector3.new(1, 15, 1)
 		end
 		if toggle == false then 
-			local leftARM = game:GetService("Workspace")[plr]["Left Arm"]
 			leftARM.Size = Vector3.new(1, 2, 1)
-	
-			local rightARM = game:GetService("Workspace")[plr]["Right Arm"]
 			rightARM.Size = Vector3.new(1, 2, 1)
 		end
 	end)
 end
-coroutine.wrap(NTRTB_fake_script)()
-local function VTVZP_fake_script() -- Button_3.LocalScript 
+coroutine.wrap(OVEHE_fake_script)()
+local function JYMXK_fake_script() -- Button_3.LocalScript 
 	local script = Instance.new('LocalScript', Button_3)
 
 	toggle = false
@@ -249,18 +243,18 @@ local function VTVZP_fake_script() -- Button_3.LocalScript
 			toggle = true
 		end
 		if toggle == true then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 		if toggle == false then 
 			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	
 		if toggle == true then
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35	
-		if toggle == false then 
-				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
-			end
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35
 		end
-		end)
+		if toggle == false then 
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+		end
+	end)
 end
-coroutine.wrap(VTVZP_fake_script)()
+coroutine.wrap(JYMXK_fake_script)()
