@@ -4,47 +4,61 @@
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local GuiHOLDER = Instance.new("Frame")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local Legit = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local Legit = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 local UICorner_4 = Instance.new("UICorner")
-local Legit_2 = Instance.new("ScrollingFrame")
-local Button = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local Button_2 = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local Blatant = Instance.new("ScrollingFrame")
-local Button_3 = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
-local Blatant_2 = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-GuiHOLDER.Name = "GuiHOLDER"
-GuiHOLDER.Parent = ScreenGui
-GuiHOLDER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GuiHOLDER.BackgroundTransparency = 1.000
-GuiHOLDER.Position = UDim2.new(0.367030442, 0, 0.240740746, 0)
-GuiHOLDER.Size = UDim2.new(0, 447, 0, 217)
-GuiHOLDER.Active = true
-GuiHOLDER.Draggable = true
-
 Main.Name = "Main"
-Main.Parent = GuiHOLDER
+Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Main.Position = UDim2.new(0.0632026568, 0, 0.0403532982, 0)
-Main.Size = UDim2.new(0, 406, 0, 200)
+Main.Position = UDim2.new(0.383113146, 0, 0.264197528, 0)
+Main.Size = UDim2.new(0, 406, 0, 168)
+Main.Active = true
+Main.Draggable = true
 
 UICorner.Parent = Main
+
+Legit.Name = "Legit"
+Legit.Parent = Main
+Legit.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Legit.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Legit.Position = UDim2.new(0.0369458124, 0, 0.166666672, 0)
+Legit.Size = UDim2.new(0, 377, 0, 132)
+
+TextButton.Parent = Legit
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.01591512, 0, 0.0681818202, 0)
+TextButton.Size = UDim2.new(0, 362, 0, 41)
+TextButton.Font = Enum.Font.JosefinSans
+TextButton.Text = "Mags"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 20.000
+
+UICorner_2.Parent = TextButton
+
+TextButton_2.Parent = Legit
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.Position = UDim2.new(0.0185676403, 0, 0.439393938, 0)
+TextButton_2.Size = UDim2.new(0, 362, 0, 41)
+TextButton_2.Font = Enum.Font.JosefinSans
+TextButton_2.Text = "Range v1"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 20.000
+
+UICorner_3.Parent = TextButton_2
 
 TextLabel.Parent = Main
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -55,7 +69,7 @@ TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 16.000
 TextLabel.TextWrapped = true
 
-UICorner_2.Parent = TextLabel
+UICorner_4.Parent = TextLabel
 
 Close.Name = "Close"
 Close.Parent = Main
@@ -70,105 +84,16 @@ Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 
-UICorner_3.Parent = Close
-
-Legit.Name = "Legit"
-Legit.Parent = Main
-Legit.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Legit.Position = UDim2.new(0, 0, 0.135854945, 0)
-Legit.Size = UDim2.new(0, 199, 0, 34)
-Legit.Font = Enum.Font.SourceSans
-Legit.Text = "Legit"
-Legit.TextColor3 = Color3.fromRGB(255, 255, 255)
-Legit.TextSize = 20.000
-
-UICorner_4.Parent = Legit
-
-Legit_2.Name = "Legit"
-Legit_2.Parent = Main
-Legit_2.Active = true
-Legit_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Legit_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Legit_2.Position = UDim2.new(0.00985221658, 0, 0.305000007, 0)
-Legit_2.Size = UDim2.new(0, 195, 0, 131)
-
-Button.Name = "Button"
-Button.Parent = Legit_2
-Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Button.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Button.Size = UDim2.new(0, 180, 0, 50)
-Button.Font = Enum.Font.JosefinSans
-Button.Text = "Legit Mags"
-Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.TextSize = 14.000
-
-UICorner_5.Parent = Button
-
-Button_2.Name = "Button"
-Button_2.Parent = Legit_2
-Button_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Button_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Button_2.Position = UDim2.new(0, 0, 0.140000001, 0)
-Button_2.Size = UDim2.new(0, 180, 0, 50)
-Button_2.Font = Enum.Font.JosefinSans
-Button_2.Text = "Range v1"
-Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_2.TextSize = 14.000
-
-UICorner_6.Parent = Button_2
-
-Blatant.Name = "Blatant"
-Blatant.Parent = Main
-Blatant.Active = true
-Blatant.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Blatant.BorderColor3 = Color3.fromRGB(30, 30, 30)
-Blatant.Position = UDim2.new(0.512315273, 0, 0.305000007, 0)
-Blatant.Size = UDim2.new(0, 192, 0, 131)
-
-Button_3.Name = "Button"
-Button_3.Parent = Blatant
-Button_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Button_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
-Button_3.Size = UDim2.new(0, 180, 0, 50)
-Button_3.Font = Enum.Font.JosefinSans
-Button_3.Text = "WalkSpeed"
-Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button_3.TextSize = 14.000
-
-UICorner_7.Parent = Button_3
-
-Blatant_2.Name = "Blatant"
-Blatant_2.Parent = Main
-Blatant_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Blatant_2.Position = UDim2.new(0.512315273, 0, 0.130854949, 0)
-Blatant_2.Size = UDim2.new(0, 192, 0, 34)
-Blatant_2.Font = Enum.Font.SourceSans
-Blatant_2.Text = "Blatant"
-Blatant_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Blatant_2.TextSize = 20.000
-
-UICorner_8.Parent = Blatant_2
+UICorner_5.Parent = Close
 
 -- Scripts:
 
-local function CXWR_fake_script() -- Close.LocalScript 
-	local script = Instance.new('LocalScript', Close)
-
-	script.Parent.MouseButton1Down:connect(function()
-		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
-		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
-		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
-		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
-	end) 
-end
-coroutine.wrap(CXWR_fake_script)()
-local function BCWO_fake_script() -- Button.LocalScript 
-	local script = Instance.new('LocalScript', Button)
+local function ICUB_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	local plr = game:GetService("Players").LocalPlayer.Name
 	local left = game:GetService("Workspace")[plr].CatchLeft
 	local right = game:GetService("Workspace")[plr].CatchRight
-	
 	
 	
 	toggle = false
@@ -178,12 +103,7 @@ local function BCWO_fake_script() -- Button.LocalScript
 			toggle = false 
 		else
 			toggle = true
-		end
-		if toggle == true then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		end
-		if toggle == false then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+			
 		end
 	
 		if toggle == true then
@@ -196,15 +116,16 @@ local function BCWO_fake_script() -- Button.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BCWO_fake_script)()
-local function OVEHE_fake_script() -- Button_2.LocalScript 
-	local script = Instance.new('LocalScript', Button_2)
+coroutine.wrap(ICUB_fake_script)()
+local function RAQIYPG_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
 
 	local plr = game:GetService("Players").LocalPlayer.Name
 	local leftARM = game:GetService("Workspace")[plr]["Left Arm"]
 	local rightARM = game:GetService("Workspace")[plr]["Right Arm"]
 	
 	
+	
 	toggle = false
 	script.Parent.MouseButton1Down:connect(function()
 	
@@ -212,49 +133,29 @@ local function OVEHE_fake_script() -- Button_2.LocalScript
 			toggle = false 
 		else
 			toggle = true
-		end
-		if toggle == true then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		end
-		if toggle == false then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		end
 	
 		if toggle == true then
 			leftARM.Size = Vector3.new(1, 15, 1)
 			rightARM.Size = Vector3.new(1, 15, 1)
+	
 		end
 		if toggle == false then 
-			leftARM.Size = Vector3.new(1, 2, 1)
+			leftARM.Size = Vector3.new(1, 2, 1)	
 			rightARM.Size = Vector3.new(1, 2, 1)
+	
 		end
 	end)
 end
-coroutine.wrap(OVEHE_fake_script)()
-local function JYMXK_fake_script() -- Button_3.LocalScript 
-	local script = Instance.new('LocalScript', Button_3)
+coroutine.wrap(RAQIYPG_fake_script)()
+local function WDTMF_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
 
-	toggle = false
 	script.Parent.MouseButton1Down:connect(function()
-	
-		if toggle == true then 
-			toggle = false 
-		else
-			toggle = true
-		end
-		if toggle == true then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		end
-		if toggle == false then 
-			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-		end
-	
-		if toggle == true then
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 35
-		end
-		if toggle == false then 
-			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
-		end
-	end)
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+	end) 
 end
-coroutine.wrap(JYMXK_fake_script)()
+coroutine.wrap(WDTMF_fake_script)()
